@@ -122,11 +122,26 @@ input:hover {
 
 
 @media (max-width: 500px) {
+
+.add_task{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
 input {
     width: 15rem;
+    font-size: 0.8rem;
+    height:5rem;
 }
 
 .task_lists {
-    width: 25rem;
+    width: 20rem;
+}
+
+.add_btn{
+    font-size: 0.8rem;
+    height: 5rem;
 }
 }
