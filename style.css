@@ -3,16 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    
+
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-  background-color: #AD2831;
-    
+    background-color: #AD2831;
+
 }
 
 
@@ -30,11 +30,13 @@ h1 {
     align-items: center;
     margin-top: 2rem;
     height: 4rem;
-    
+    gap: 1rem;
+
 }
 
 input {
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     height: 2.8rem;
     border-radius: 50px;
     border: none;
@@ -52,9 +54,9 @@ input:hover {
 }
 
 .add_btn {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     height: 3rem;
-    width: 6rem;
+    width: 10rem;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 700;
@@ -71,7 +73,8 @@ input:hover {
 .task_lists {
     background-color: black;
     height: 25rem;
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
     margin-top: 2rem;
     padding: 1.5rem;
     border-radius: 2rem;
@@ -94,12 +97,12 @@ input:hover {
     justify-content: space-between;
     color: #EDF2F4;
     padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
 .task_lists svg {
-    fill:#D90429;
+    fill: #D90429;
     height: 2rem;
     width: 2rem;
     cursor: pointer;
@@ -117,31 +120,39 @@ input:hover {
 
 .complete_task {
     text-decoration: line-through red;
-    
+
 }
 
 
 @media (max-width: 500px) {
 
-.add_task{
-    flex-direction: column;
-    gap: 1rem;
+    .add_task {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    input {
+
+        max-width: 90%;
+        font-size: 0.9rem;
+        height: 5rem;
+    }
+
+    .task_lists {
+
+        max-width: 90%;
+    }
+
+
+    .add_btn {
+        width: 8rem;
+        font-size: 0.9rem;
+        height: 5rem;
+    }
 }
 
-
-
-input {
-    width: 15rem;
-    font-size: 0.8rem;
-    height:5rem;
-}
-
-.task_lists {
-    width: 20rem;
-}
-
-.add_btn{
-    font-size: 0.8rem;
-    height: 5rem;
-}
+@media (max-width: 310px) {
+    h1 {
+        font-size: 2.8rem;
+    }
 }
