@@ -30,10 +30,10 @@ h1 {
     align-items: center;
     margin-top: 2rem;
     height: 4rem;
+    
 }
 
 input {
-
     width: 25rem;
     height: 2.8rem;
     border-radius: 50px;
@@ -120,3 +120,13 @@ input:hover {
     
 }
 
+
+@media (max-width: 500px) {
+input {
+    width: 15rem;
+}
+
+.task_lists {
+    width: 25rem;
+}
+}
