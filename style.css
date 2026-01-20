@@ -137,7 +137,6 @@ input:hover {
     input {
 
         max-width: 90%;
-        font-size: 0.9rem;
         height: 5rem;
     }
 
@@ -149,7 +148,6 @@ input:hover {
 
     .add_btn {
         width: 8rem;
-        font-size: 0.9rem;
         height: 5rem;
     }
 }
