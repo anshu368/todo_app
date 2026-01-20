@@ -24,6 +24,8 @@ h1 {
     color: #800E13;
 }
 
+
+/* task add container */
 .add_task {
     display: flex;
     justify-content: center;
@@ -70,6 +72,9 @@ input:hover {
 .add_btn:hover {
     box-shadow: 0 2px 4px black;
 }
+
+
+/* task list container */
 
 .task_lists {
     background-color: black;
@@ -124,6 +129,8 @@ input:hover {
 
 }
 
+
+/* responsive  */
 
 @media (max-width: 500px) {
 
